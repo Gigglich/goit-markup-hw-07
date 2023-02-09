@@ -1,0 +1,244 @@
+@viewport { 
+    width: device-width;
+}
+:root{
+    --standard-white-color: #ffffff;
+    --text-color: #434455;
+    --title-text-color: #2E2F42;
+    --subtle-dark-color: #8E8F99;
+    --active-color: #4D5AE5;
+    --accent-color: #E7E9FC;
+    --light-white-color: #F4F4FD;
+    --second-active-color: #404BBF;
+    --card-set-gap: 20px;
+    --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    --backdrop-color: rgba(46, 47, 66, 0.4);
+    --modal-color:  #FCFCFC;
+    --modal-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --animation-duration: 250ms;
+    --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+@media screen and (min-width: 1200px) {
+    .container-header{
+        width: 1158px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container{
+        width: 1158px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+
+    .container-footer{
+        width: 1158px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+    }
+    .header{
+        padding-bottom: 25px;
+    }
+    .header-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+    }
+    .nav-list,
+     .contacts,
+      .logo{
+        display: flex;
+        align-items: center;
+    }
+    .nav-member{
+        list-style-type: none;  
+        display: inline-block;  
+        
+    }
+    .nav-list{
+        margin-left: 77px;
+        
+    }
+    .nav-link{
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .nav-list li:not(:last-child){
+        margin-right: 40px;
+    }
+    .contacts{
+       display: flex;
+       list-style: none;
+       padding-left: 0;
+      
+    }
+    .contacts-member{
+        list-style-type: none;
+    }
+    .contacts li:not(:last-child){
+      margin-right: 40px;
+    }
+    .contacts-link{
+        font-size: 16px;
+       
+    }
+    .menu-open{
+        display: none;
+    }
+    .mob-menu{
+        display: none;
+    }
+    .banner{
+        padding-bottom: 188px;  
+        padding-top: 188px;
+        max-width: 1600px;
+        max-height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .banner{
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage2x.jpg);
+    }
+  }
+    .banner-logo{
+        font-size: 56px;
+        margin-bottom: 48px;
+    }
+    .button{
+        font-weight: 600;
+        line-height: 1.18;
+    }
+    .modal{
+        width: 408px;
+        min-height: 584px;
+    }
+    .important-points-section{
+        padding-top: 120px;
+    
+    }
+    .important-points{
+        display:flex;
+        flex-wrap: nowrap;
+        text-align: initial;   
+    }
+    
+    .important-points-member{
+        list-style-type: none;
+        width: 264px;
+    }
+    .important-points li:not(:last-child){
+        margin-right: 24px;
+    }
+    .important-points-card-icon{
+        display: flex;
+        width: 264px;
+        height: 112px;
+        background-color: var(--light-white-color);
+        margin-bottom: 8px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .important-points li:not(:first-child){
+        margin-top: 0;
+    }
+    .important-points-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .important-points-description{
+        font-weight: 400;
+    }
+    .activities{
+        display: flex;
+    }
+    .teamcards{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .teamcards-list{
+        display: flex;
+        margin: 0;
+        list-style: none;
+        flex-wrap: nowrap;
+        justify-content: initial;   
+        padding-bottom: 0;
+    }
+    .teamcards-list > .teamcards-member{
+        margin: 0;
+    }
+    .teamcards-list > .teamcards-member:not(:first-child) {
+        margin-left: 24px;
+    }
+    .customer-services-list{
+        gap: 24px;
+        flex-wrap: initial;
+        justify-content: initial;
+    }
+    .container-footer{
+        flex-wrap: initial;
+        justify-content: initial;
+    }
+    .footer-socials{
+        text-align: initial;
+        margin-top: 0;
+        margin-left: 120px;
+        margin-right: 80px;
+    }
+    .footer-form-content{
+        margin: 0;
+        text-align: initial;
+    }
+    .input-and-button{
+        display: flex;
+        width: 453px;
+        gap: 24px;
+    }
+    .footer-button{
+        margin-top: 0;
+    }
+    .footer-input{
+        width: 264px;
+    }
+    .image-list{
+        gap: 0;
+        justify-content: initial;
+    }
+    .button-list{
+        justify-content: center;
+        margin-bottom: 72px;
+    }
+    .image-list-member{
+        margin-top: 0;
+    }
+    .image-list > .image-list-member:nth-last-child(-n+6){
+        margin-top: 48px;
+    
+    }
+    .image-list-member:not(:nth-child(3n+1)) {
+        margin-left: 24px;
+}
+    .footer-logo{
+        text-align: initial;
+    }
+}

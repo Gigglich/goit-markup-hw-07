@@ -1,0 +1,196 @@
+@viewport { 
+    width: device-width;
+}
+:root{
+    --standard-white-color: #ffffff;
+    --text-color: #434455;
+    --title-text-color: #2E2F42;
+    --subtle-dark-color: #8E8F99;
+    --active-color: #4D5AE5;
+    --accent-color: #E7E9FC;
+    --light-white-color: #F4F4FD;
+    --second-active-color: #404BBF;
+    --card-set-gap: 20px;
+    --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    --backdrop-color: rgba(46, 47, 66, 0.4);
+    --modal-color:  #FCFCFC;
+    --modal-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --animation-duration: 250ms;
+    --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+@media  screen and (min-width: 768px) and (max-width:1199px){
+    .container{
+        width: 768px;
+    }
+    
+    .container-header{
+        width: 768px;
+        position: relative;
+    }
+    .container-footer{
+        width: 768px;
+        justify-content: initial;
+    }
+    .header{
+        padding-bottom: 19px;
+    }
+    .logo{
+        display: initial;
+    }
+    nav{
+        display: initial;
+    }
+    .nav-list, .contacts{
+        display: initial;
+    }
+    .nav-link{
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .nav-link-current::after{
+        margin-top: 22px;
+    }
+    .contacts li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacts{
+        position: absolute;
+        top: 0px;
+        right: 16px;
+    }
+    .contacts-link{
+        font-size: 12px;
+    }
+    .menu-open{
+        display: none;
+    }
+    .mob-menu{
+        display: none;
+    }
+    .banner{
+        max-width: 768px;
+        max-height: 436px;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage-tab.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .banner{
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/Bgimage-tab2x.jpg);
+    }
+  }
+    .banner{
+        padding-bottom: 108px;
+    }
+    .banner-logo{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+    }
+    .modal{
+        width: 408px;
+        min-height: 586px;
+    }
+    .important-points-section{
+        padding-bottom: 96px;
+    }
+    .important-points{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .important-points-title{
+        text-align: initial;
+    }
+    .important-points li{
+        width: calc((100% - 24px) / 2);
+        margin: 0;
+    }
+    .important-points li:not(:first-child){
+        margin-top: 0;
+    }
+    .teamcards{
+        padding-bottom: 105px;
+    }
+    .teamcards-list{
+        padding-bottom: 0;
+        gap: 24px;
+        row-gap: 64px;
+    }
+    .teamcards-list > .teamcards-member{
+       margin: 0;
+    }
+    .teamcards-member{
+        width:  calc((100% - 24px) / 2);
+    }
+    .customer-services-list{
+        gap: 24px;
+        row-gap: 72px;
+    }
+    .footer-content{
+        margin-left: 108px;
+    }
+    .footer-logo{
+        text-align: initial;
+    }
+    .footer-socials{
+        margin: 0;
+        margin-left: 24px;
+    }
+    .footer-form-content{
+        text-align: initial;
+        margin-left: 108px;
+    }
+    .input-and-button{
+        display: flex;
+        align-items: center;
+    }
+    .footer-input{
+        width: 264px;
+    }
+    .footer-button{
+        margin: 0;
+        margin-left: 24px;
+    }
+    .button-list{
+        margin-bottom: 64px;
+        justify-content: center;
+    }
+    .image-list{
+        justify-content: initial;
+        gap: 0;
+    }
+    .image-list-member{
+        flex-basis: 356px;
+    }
+    .image{
+        width: 356px;
+    }
+    .image img{
+        width: 356px !important;  
+        /* Так, я знаю, це негарно так робити, але я писав це о 2-й годині ночі, 
+        за день до того, як я оптимізував картинки.
+         Мені потрібно було швидке рішення */
+    }
+    .image-card{
+        width: 356px;
+    }
+    .image-card-content{
+        width: 356px;
+    }
+    .image-list-member:not(:nth-child(2n+1)){
+        margin-left: 24px;
+    }
+    .image-list-member:not(:last-child){
+        margin-bottom: 72px;
+    }
+}
